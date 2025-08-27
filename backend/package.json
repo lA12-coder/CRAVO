@@ -1,25 +1,32 @@
 {
-  "name": "food-delivery-backend",
+  "name": "food-delivery-api",
   "version": "1.0.0",
-  "description": "Backend for a food delivery application with features for customers, delivery personnel, cafes, and an admin panel.",
-  "main": "src/server.js",
+  "description": "A food delivery backend API built with Express, Mongoose, and Firebase.",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
+  "keywords": [
+    "express",
+    "mongoose",
+    "firebase",
+    "api"
+  ],
+  "author": "Henok",
+  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "dotenv": "^8.6.0",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^5.13.23",
-    "multer": "^2.0.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "firebase-admin": "^12.1.0",
+    "geolib": "^3.3.4",
+    "mongoose": "^8.4.1",
+    "uuid": "^9.0.1",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "author": "Your Name",
-  "license": "MIT"
+    "nodemon": "^3.1.3"
+  }
 }
